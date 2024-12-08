@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - {t: BASE, h: toggle}
+  - Q
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - L_BASE L_PHOTO L_GAME
-  - {t: TAB, h: LCMD}
+  - A
   - {t: A, h: NAV}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: LCMD}
   - DEL
-  - SEARCH
+  - Z
   - Z
   - {t: X, h: MEH}
   - {t: C, h: HYPER}
