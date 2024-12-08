@@ -16,7 +16,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 2 7>;
+        layers = <0 2>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -89,12 +89,6 @@
             tapping-term-ms = <250>;
             bindings = <&mkp RCLK>, <&mo 9>;  // tap/hold, double_tap
         };
-
-        td_bore: BASE_or_EXTRA {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&mo 6>, <&to 0>;
-        };
     };
 
     combos {
@@ -114,11 +108,6 @@
         RightClick {
             bindings = <&mkp RCLK>;
             key-positions = <16 37>;
-        };
-
-        BASE_or_EXTRAS {
-            bindings = <&td_bore>;
-            key-positions = <38 39>;
         };
     };
 
@@ -145,7 +134,7 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-    &kp TAB            &kp Q           &kp W                     &kp E                         &kp R              &kp T                 &kp Y             &kp U             &kp I                             &kp O                          &kp P                   &kp BSLH
+    &kp TAB            &kp Q           &kp W                     &kp E                         &kp R              &kp T                 &kp Y             &kp U             &kp I                             &kp O                          &kp P                   &kp FSLH
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
     &kp ESC          &hm LCMD A           &hm LEFT_ALT S            &hm LCTRL D            &hm LEFT_SHIFT F     &kp G                 &kp H         &hm LEFT_SHIFT J      &hm RCTRL K                       &hm RIGHT_ALT L                &hm LCMD SEMICOLON       &kp SINGLE_QUOTE
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
