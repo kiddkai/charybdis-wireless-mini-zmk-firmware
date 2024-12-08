@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - Q
+  - TAB
   - Q
   - W
   - E
@@ -11,9 +11,9 @@ layers:
   - I
   - O
   - P
-  - L_BASE L_PHOTO L_GAME
-  - A
-  - {t: A, h: NAV}
+  - /
+  - ESC
+  - {t: A, h: LCMD}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
   - {t: F, h: LEFT SHIFT}
@@ -23,8 +23,8 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: LCMD}
-  - DEL
-  - Z
+  - ''''
+  - {t: '@', h: EXTRAS}
   - Z
   - {t: X, h: MEH}
   - {t: C, h: HYPER}
@@ -36,11 +36,11 @@ layers:
   - {t: ., h: MEH}
   - /
   - DEV TOOLS
-  - SCRL SLOW
+  - {t: DELETE, h: NUM}
   - {t: RETURN, h: MOUSE}
   - L CLK
-  - {t: BACK SPACE, h: NUM}
-  - {t: SPACE, h: SYM}
+  - {t: BACK SPACE, h: SYM}
+  - {t: SPACE, h: NAV}
   NUM:
   - {t: ▽, type: trans}
   - ''
@@ -78,10 +78,10 @@ layers:
   - {t: '3', h: F3}
   - {t: '=', h: DEV TOOLS}
   - ''
-  - ''
+  - {type: held}
   - ''
   - {t: ▽, type: trans}
-  - {t: '0', type: held}
+  - '0'
   - {t: ▽, type: trans}
   NAV:
   - ''
@@ -97,7 +97,7 @@ layers:
   - PANE ▶
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -124,7 +124,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   SYM:
   - ''
   - +
@@ -165,57 +165,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
   - {type: held}
-  GAME: ['1', TAB, Q, W, E, R, '', '', '', '', '', '', '2', LCTRL, A, S, D, F, '', '', '', '', '', '', '3', LSHFT, Z, X, C, V, '', '', '', '', '', '', '', SPACE,
-    LEFT ALT, '', '']
-  PHOTOS:
-  - {t: ▽, type: trans}
-  - TAG Z
-  - TAG E
-  - TAG A
-  - TAG S
-  - TAG B
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - FIT
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - LCTRL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - SHRED
-  - SHOW TAGS
-  - REJECT
-  - PENDING
-  - ACCEPT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   EXTRAS:
   - POWER
-  - SHRUG
-  - LGTM
-  - GIT COMMIT
+  - ''
+  - ''
+  - ''
   - ''
   - BRIGHTNESS INC
   - {t: BT, h: '0'}
@@ -225,9 +181,9 @@ layers:
   - OUT TOG
   - BT CLR
   - SLEEP
-  - SHIT SUDO
+  - ''
   - PYTHON LOOP
-  - JS LOOP
+  - ''
   - ''
   - BRIGHTNESS DEC
   - ''
@@ -236,13 +192,13 @@ layers:
   - STOP
   - NEXT
   - ''
-  - LOCK
+  - {t: LOCK, type: held}
   - ''
   - ''
   - ''
   - ''
-  - CLIP HIST
-  - NEW DIR
+  - ''
+  - ''
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
@@ -387,5 +343,3 @@ combos:
   k: M CLK
 - p: [16, 37]
   k: R CLK
-- p: [38, 39]
-  k: L_BASE L_EXTRA
